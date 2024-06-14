@@ -1,3 +1,9 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { CrudsComponent } from './cruds/cruds.component';
+import { NavComponent } from './nav/nav.component';
+
+export const routes: Routes = [
+  { path: 'crud', component: CrudsComponent },
+  { path: '', component: NavComponent },
+];
